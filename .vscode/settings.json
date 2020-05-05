@@ -1,0 +1,6 @@
+{
+    "less.compile": {
+        "out": "${workspaceRoot}\\static\\css\\"
+    },
+    "liveServer.settings.port": 5501
+}

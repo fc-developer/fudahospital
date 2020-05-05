@@ -1,0 +1,1462 @@
+@charset "utf-8";
+
+/*格式化全局变量 开始*/
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+
+html,
+body {
+    background: #fff;
+    font-family: 'Minion Regular', 'Minion W01 Cap Regular', sans-serif, Tahoma, Helvetica, Arial, Georgia, '微软黑体', '新宋体';
+    color: #333;
+    height: 101%
+}
+
+p,
+ul,
+ol,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+img,
+blockquote,
+form {
+    border: 0;
+    list-style: none;
+}
+
+input,
+select,
+button {
+    background: #FAFAFA;
+    border: solid 1px #E1E1E1;
+    overflow: hidden;
+}
+
+textarea {
+    background: #FAFAFA;
+    border: solid 1px #E1E1E1;
+}
+
+/*格式化全局变量 结束*/
+
+/*通用链接样式 开始*/
+a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/*通用链接样式 结束*/
+
+/*适应屏幕宽度展示 start*/
+@media screen and (min-width:1px) and (max-width:399px) {
+    #main {
+        width: 100%;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:800px) {
+    #main {
+        width: 100%;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1023px) {
+    #main {
+        width: 800px;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1151px) {
+    #main {
+        width: 800px;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 800px;
+    }
+}
+
+@media screen and (min-width:1152px) and (max-width:1279px) {
+    #main {
+        width: 1024px;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 1024px;
+    }
+}
+
+@media screen and (min-width:1280px) and (max-width:1439px) {
+    #main {
+        width: 1152px;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 1152px;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width:1599px) {
+    #main {
+        width: 1280px;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 1280px;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    #main {
+        width: 1440px;
+    }
+
+    .mymenu_css .mymenu_width {
+        width: 1440px;
+    }
+}
+
+/*适应屏幕宽度展示 end*/
+
+@media screen and (max-width:800px) {
+
+    html,
+    body {
+        font-size: 0.875em;
+    }
+
+    /*#main{width:100%;}*/
+
+    /*通用的表单样式 start*/
+    tr,
+    td,
+    th,
+    div,
+    span {
+        line-height: 1.5em;
+    }
+
+    input,
+    select,
+    button {
+        height: 2.5em;
+        font-size: 1em;
+        margin-top: 0.3em;
+        line-height: 2.5em;
+        padding: 0 0.3em 0 0.3em;
+    }
+
+    textarea {
+        padding: 0.3em;
+        margin-top: 0.3em;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    /*通用的表单样式 end*/
+
+    /*手机端头部 start*/
+    #header {
+        width: 100%;
+        height: 6em;
+        background: #fff;
+        color: #4ea1ac;
+        border-bottom: solid 4px #4abdcc;
+        z-index: 9999;
+        transition: 1s;
+    }
+
+    #header .logo {
+        width: 70%;
+        height: 6em;
+        float: left;
+        background: url(/images/logo.jpg) no-repeat 1.5em center;
+        background-size: 92%;
+        cursor: pointer
+    }
+
+    #header .menu {
+        width: 25%;
+        height: 3em;
+        float: left;
+        text-align: right;
+        margin-top: 2em;
+        cursor: pointer;
+        background: no-repeat;
+        background-image: linear-gradient(to top, currentcolor, currentcolor), linear-gradient(to top, currentcolor, currentcolor), linear-gradient(to top, currentcolor, currentcolor);
+        background-size: 2.8em 0.4em, 2.8em 0.4em, 2.8em 0.4em;
+        background-position: right 0, right 0.6em, right 1.2em;
+    }
+
+    #header .close {
+        display: none;
+        width: 25%;
+        height: 3em;
+        float: left;
+        margin-top: 2.4em;
+        padding-top: 0.3em;
+        cursor: pointer;
+    }
+
+    #header .close .closebg {
+        width: 2.3em;
+        height: 0.4em;
+        margin-left: 70%;
+        background: currentcolor;
+        transform: rotate(45deg);
+    }
+
+    #header .close .closebg:after {
+        content: '';
+        display: block;
+        width: 2.3em;
+        height: 0.4em;
+        background: currentcolor;
+        transform: rotate(90deg);
+    }
+
+    #header .close .closestr {
+        width: 3em;
+        height: 2em;
+        padding-top: 0.8em;
+        margin-left: 65%;
+    }
+
+    /*手机端头部 end*/
+
+    /*移动端 语言选择栏*/
+    #mobile_toptips {
+        width: 100%;
+        height: 3.5em;
+        line-height: 3.5em;
+        color: #ccc;
+        font-size: 1em;
+    }
+
+    #mobile_toptips #selectLanguage2 {
+        height: 3.5em;
+        line-height: 3.5em;
+        background: #333;
+        color: #17798e;
+        text-align: center;
+        font-weight: bold;
+        outline: none
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 {
+        display: none;
+        width: 100%;
+        background-color: #444;
+        position: relative;
+        z-index: 999;
+        /*position:absolute;z-index:99999;*/
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .EN {
+        background: url(/images/country_flags/us.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .ALB {
+        background: url(/images/country_flags/alb.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .RU {
+        background: url(/images/country_flags/russia.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .IND {
+        background: url(/images/country_flags/yd.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .ID {
+        background: url(/images/country_flags/id.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .MA {
+        background: url(/images/country_flags/mlxy.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .YN {
+        background: url(/images/country_flags/yn.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .TG {
+        background: url(/images/country_flags/tg.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .HU {
+        background: url(/images/country_flags/xyl.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .RO {
+        background: url(/images/country_flags/lmny.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .DM {
+        background: url(/images/country_flags/dm.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .FT {
+        background: url(/images/country_flags/hk.jpg);
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 .JT {
+        background: url(/images/country_flags/china.jpg);
+    }
+
+    /*#mobile_toptips #selectLanguage2 .selectList2 .OTHER{background:url(/images/country_flags/china.jpg);}*/
+
+    #mobile_toptips #selectLanguage2 .selectList2 .usual {
+        line-height: 3em;
+        cursor: pointer;
+        background-size: 3em;
+        background-position: 6em center;
+        background-repeat: no-repeat;
+        background-color: #444;
+        color: #f7f7f7;
+    }
+
+    #mobile_toptips #selectLanguage2 .selectList2 li:hover {
+        background-color: #666;
+    }
+
+    #mobile_toptips #selectLanguage2:hover .selectList2 {
+        display: block
+    }
+
+
+    /*头条 黑边 start*/
+    #toptips {
+        display: none
+    }
+
+    /*头条 黑边 end*/
+
+
+    /*手机端栏目导航 start transition: visibility 1s, opacity 1s;能见度与不透明度 transform:rotateY(180deg);以Y为中轴线旋转180度 -webkit-filter:blur(3px);模糊效果磨砂玻璃*/
+    #mymenu {
+        display: none;
+        color: #f9f9f9;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        cursor: pointer;
+        padding: 0 0.5em 0 0.5em;
+        background-image: linear-gradient(45deg, #000, #333, #000, #444);
+        background-positon: center center;
+    }
+
+    #mymenu a {
+        color: currentColor;
+    }
+
+    #mymenu li {
+        width: 100%;
+        text-align: left;
+        background: no-repeat;
+    }
+
+    #mymenu ul {
+        padding-left: 0.9em;
+        display: none
+    }
+
+    #mymenu ul li {
+        font-size: 0.9em;
+        color: #999;
+    }
+
+    #mymenu #guide {
+        border: none;
+        outline: none;
+        text-align: center;
+    }
+
+    #mymenu #guide li {
+        float: left;
+        text-align: center;
+        width: 33%;
+        height: 5em;
+        line-height: 5em;
+        color: #f8f8f8;
+        font-size: 0.8em;
+        cursor: pointer;
+    }
+
+    #mymenu #guide #selectLanguage3 {}
+
+    #mymenu #guide #selectLanguage3 .selectList3 {
+        display: none;
+        width: 100%;
+        padding: 0;
+        background-color: #444;
+        position: relative;
+        z-index: 999
+    }
+
+    #mymenu #guide #selectLanguage3 .selectList3 li {
+        width: 100%;
+        height: 2.5em;
+        line-height: 2.5em;
+        cursor: pointer;
+        background-color: #444;
+        color: #f7f7f7;
+    }
+
+    #mymenu #guide #selectLanguage3 .selectList3 li:hover {
+        background-color: #666;
+    }
+
+    #mymenu #searchK input[type='search'] {
+        border: none;
+        outline: none;
+        padding-left: 1.2em;
+        width: 60%;
+        height: 1.8em;
+        margin-bottom: 1em;
+        border-radius: 0.2em;
+        background: #222;
+        color: #ccc;
+    }
+
+    #mymenu #searchK input[type='button'] {
+        border: none;
+        outline: none;
+        width: 22%;
+        height: 1.8em;
+        margin: 0 0 1em 0.3em;
+        text-align: center;
+        border-radius: 0.2em;
+        background: no-repeat;
+        color: currentColor;
+        cursor: pointer;
+    }
+
+    /*手机端栏目导航 end*/
+
+    /*PC栏目导航 start*/
+    #mymenu2 {
+        display: none
+    }
+
+    /*PC栏目导航 end*/
+
+    #homepage {
+        display: none
+    }
+
+    .myguide {
+        display: none
+    }
+
+    .mymenu_css {
+        width: 100%;
+    }
+
+    /*文章块样式*/
+    .article_css {
+        background: #CFC8C9;
+        margin-top: 2em;
+    }
+
+    /*块样式*/
+    .section_css {
+        background: #fff;
+        /*margin-top:1em;*/
+    }
+
+    /*滚动后底置就医指引*/
+    .guideShow2 {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+    .guideShow2 ul {
+        width: 100%;
+    }
+
+    .guideShow2 li {
+        width: 25%;
+        text-align: center;
+        float: left;
+        display: table;
+    }
+
+    .guideShow2 li span {
+        display: table-cell;
+        vertical-align: bottom;
+        color: #f7f7f7;
+        font-size: 1em;
+    }
+
+    .guideShow2 li.bzcx {
+        display: none;
+        background: url(/images/bzfl.png)no-repeat center 20% #545454;
+        background-size: 20%;
+    }
+
+    .guideShow2 li.czys {
+        display: none;
+        background: url(/images/yszj.png)no-repeat center 20% #626262;
+        background-size: 20%;
+    }
+
+    .guideShow2 li.zxlf {
+        background: url(/images/zxlf.png)no-repeat center 20% #545454;
+        background-size: 25%
+    }
+
+    .guideShow2 li.zxyy {
+        background: url(/images/zxyy.png)no-repeat center 20% #626262;
+        background-size: 20%
+    }
+
+    .guideShow2 li.zxly {
+        background: url(/images/zxly.png)no-repeat center 20% #545454;
+        background-size: 20%
+    }
+
+    .guideShow2 li.hzgs {
+        background: url(/images/hzgs.png)no-repeat center 20% #626262;
+        background-size: 23%
+    }
+
+    .guideShow2 li:hover span {
+        background: #ccc;
+        padding-bottom: 0;
+        vertical-align: middle;
+    }
+
+
+
+
+
+    /*分享按钮块 start*/
+    #sharebutton {
+        background: #30acc6;
+        height: 5em;
+        margin-top: 2em;
+    }
+
+    #sharebutton .left {
+        float: left;
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 4em;
+        font-weight: bolder;
+        color: #f7f7f7;
+    }
+
+    #sharebutton .middle {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 55%;
+        bottom: 0;
+        background: #fff;
+    }
+
+    #sharebutton .middle li {
+        display: table;
+        float: left;
+        width: 30%;
+        height: 30%;
+        text-align: center;
+        cursor: pointer;
+        margin-left: 2.5%;
+    }
+
+    #sharebutton .middle li span {
+        display: table-cell;
+        vertical-align: bottom;
+        font-size: 0.9em;
+    }
+
+    #sharebutton .middle li#weibo {
+        background: url('/images/g/weibo.png') no-repeat center center;
+        background-size: 33%;
+    }
+
+    #sharebutton .middle li#weixin {
+        background: url('/images/g/weixin.png') no-repeat center center;
+        background-size: 33%;
+    }
+
+    #sharebutton .middle li#qq {
+        background: url('/images/g/qq.png') no-repeat center center;
+        background-size: 33%;
+    }
+
+    #sharebutton .middle li#facebook {
+        background: url('/images/g/facebook.png') no-repeat center center;
+        background-size: 33%;
+    }
+
+    #sharebutton .middle li#twitter {
+        background: url('/images/g/twitter.png') no-repeat center center;
+        background-size: 33%;
+    }
+
+    #sharebutton .middle li#linkedin {
+        background: url('/images/g/linkedin.png') no-repeat center center;
+        background-size: 33%;
+    }
+
+    #sharebutton .middle li#cancle {
+        width: 100%;
+        line-height: 4em;
+        margin-top: 2em;
+        text-align: center;
+        cursor: pointer;
+        border-top: solid 1px #f3f3f3;
+        margin-left: 0;
+    }
+
+    #sharebutton .middle li#sharetitle {
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
+        padding-top: 2em;
+        height: 10%;
+        margin-left: 0;
+    }
+
+    #sharebutton .right {
+        float: left;
+        width: 30%;
+        height: 100%;
+        line-height: 5em;
+        text-align: center;
+        color: #f7f7f7
+    }
+
+    #sharebutton .right .share {
+        border-radius: 1em;
+        padding: 0.3em 2em 0.3em 2em;
+        border: 1px solid #f7f7f7
+    }
+
+    #sharebutton .right .share:hover {
+        background: #f7f7f7;
+        border: 1px solid #f7f7f7;
+        color: #30acc6;
+        cursor: pointer;
+    }
+
+    #sharebutton .right {
+        float: left;
+        width: 50%;
+        height: 100%;
+        line-height: 5em;
+        text-align: center;
+        color: #f7f7f7
+    }
+
+    #sharebutton .right .share {
+        font-size: 1.2em;
+        border-radius: 1.2em;
+        padding: 0.3em 3em 0.3em 3em;
+        border: 1px solid #f7f7f7
+    }
+
+    #sharebutton .right .share:hover {
+        background: #f7f7f7;
+        border: 1px solid #f7f7f7;
+        color: #30acc6;
+        cursor: pointer;
+    }
+
+    /*分享按钮块 end*/
+    #rightsharetag {
+        display: none;
+        position: fixed;
+        right: 1em;
+        bottom: 10%;
+        padding: 0.5em;
+        border-radius: 50%;
+        background: #30acc6;
+        color: #f7f7f7;
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        font-size: 1em;
+        cursor: pointer
+    }
+
+    /*底部导航块 start*/
+    #bottomguide {
+        display: none
+    }
+
+    /*底部导航块 end*/
+
+    /*脚footer块 start*/
+    #footer {
+        height: 11em;
+        line-height: 1.5em;
+    }
+
+    #footer .info {
+        width: 100%;
+        height: 100%;
+        background: url('/images/g/g4.gif') no-repeat center 15% #333333;
+        background-size: 65%;
+        text-align: center;
+        font-size: 1em;
+        line-height: 2em;
+        color: #ccc;
+        padding: 7em 0 2em 0;
+    }
+
+    #footer .info2 {
+        display: none
+    }
+
+    #footer a {
+        color: currentColor;
+    }
+
+    /*脚footer块 end*/
+
+    /*侧边栏tips模块*/
+    #tips_float {
+        display: none
+    }
+}
+
+@media screen and (min-width:801px) {
+    @media screen and (max-width:1279px) {
+
+        html,
+        body {
+            font-size: 1em;
+        }
+    }
+
+    @media screen and (min-width:1280px) {
+
+        /*screen and (max-width: 1442px) and (max-device-width: 1442px)*/
+        html,
+        body {
+            font-size: 1.125em;
+        }
+    }
+
+    tr,
+    td,
+    th,
+    div,
+    span {
+        line-height: 1.5em;
+    }
+
+    input,
+    select,
+    button {
+        height: 2.5em;
+        font-size: 1em;
+        margin-top: 0.3em;
+        line-height: 2.5em;
+        padding: 0 0.3em 0 0.3em;
+    }
+
+    textarea {
+        padding: 0.3em;
+        margin-top: 0.3em;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+
+    /*语言选择栏*/
+    #mobile_toptips {
+        display: none
+    }
+
+    /*Logo 头部*/
+    #header {
+        display: none
+    }
+
+
+    /*头条 黑边*/
+    #toptips {
+        width: 100%;
+        height: 2.5em;
+        line-height: 2.5em;
+        background: #333333;
+        color: #ccc;
+        font-size: 0.65em;
+        padding: 0.5em 0em 0.5em 0em;
+    }
+
+    #toptips a {
+        color: currentColor
+    }
+
+    #toptips .left ul {}
+
+    #toptips .left ul li {
+        float: left;
+        padding: 0 0.8em 0 0.8em;
+        border: none;
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+
+    #toptips .left .honor {
+        border-right: 1px solid #555
+    }
+
+    #toptips .left .news {
+        height: 2.5em;
+        overflow: hidden;
+    }
+
+    #toptips .left .news .newsList {}
+
+    #toptips .left .news .newsList li {
+        clear: both;
+        border: none;
+    }
+
+    #toptips .right ul {
+        background: #fff
+    }
+
+    #toptips .right ul li {
+        float: left;
+        padding: 0 0.7em 0 0.7em;
+        border-right: 1px solid #555;
+        height: 2.5em;
+        line-height: 2.5em;
+    }
+
+    /*语言选择*/
+    #toptips .right ul #selectLanguage {
+        border-right: none;
+        font-weight: bold;
+        padding: 0;
+        width: 9em;
+        text-align: center
+    }
+
+    #toptips .right ul #selectLanguage .selectList {
+        display: none;
+        position: absolute;
+        z-index: 9999;
+    }
+
+    #toptips .right ul #selectLanguage .selectList .EN {
+        background: url(/images/country_flags/us.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .ALB {
+        background: url(/images/country_flags/alb.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .RU {
+        background: url(/images/country_flags/russia.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .IND {
+        background: url(/images/country_flags/yd.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .ID {
+        background: url(/images/country_flags/id.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .MA {
+        background: url(/images/country_flags/mlxy.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .YN {
+        background: url(/images/country_flags/yn.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .TG {
+        background: url(/images/country_flags/tg.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .HU {
+        background: url(/images/country_flags/xyl.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .RO {
+        background: url(/images/country_flags/lmny.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .DM {
+        background: url(/images/country_flags/dm.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .FT {
+        background: url(/images/country_flags/hk.jpg);
+    }
+
+    #toptips .right ul #selectLanguage .selectList .JT {
+        background: url(/images/country_flags/china.jpg);
+    }
+
+    /*#toptips .right ul #selectLanguage .selectList .OTHER{background:url(/images/country_flags/china.jpg);}*/
+
+    #toptips .right ul #selectLanguage .selectList .usual {
+        float: none;
+        padding: 0 1.2em 0 2.5em;
+        border: none;
+        height: 2.5em;
+        line-height: 2.5em;
+        cursor: pointer;
+        background-color: #333;
+        color: #f7f7f7;
+        background-size: 1.8em;
+        background-position: 0.3em center;
+        background-repeat: no-repeat;
+    }
+
+    #toptips .right ul #selectLanguage .selectList li:hover {
+        background-color: #666;
+    }
+
+    #toptips .right ul #selectLanguage:hover .selectList {
+        display: block
+    }
+
+
+    /*PC栏目导航*/
+    .mymenu_css {
+        width: 100%;
+        height: 3em;
+    }
+
+    .mymenu_css .mymenu_width {
+        height: 3em;
+        position: absolute;
+        z-index: 999;
+    }
+
+    #mymenu2 {
+        cursor: pointer;
+        font-size: 1em;
+        height: 3em;
+        background: #30acc6;
+    }
+
+    #mymenu2 li {
+        outline: none;
+        float: left;
+        width: 10%;
+        line-height: 3em;
+        color: #f7f7f7;
+        text-align: center;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    #mymenu2 a {
+        color: currentColor;
+    }
+
+    #mymenu2 li:hover {
+        background: #17798e;
+        color: #f7f7f7
+    }
+
+    #mymenu2 li nav {
+        height: 0;
+        background: #f7f7f7;
+        font-size: 0.9em;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+
+    #mymenu2 li nav li {
+        display: none;
+        width: 100%;
+        line-height: 2.5em;
+        background: #f4f4f4;
+        color: #17798e;
+    }
+
+    #mymenu2 li:hover nav {
+        height: 10em;
+    }
+
+    #mymenu2 li:hover nav li {
+        display: block;
+    }
+
+    #mymenu2 li#homepage {
+        background: #17798e;
+        color: #f7f7f7;
+    }
+
+    /*手机端*/
+    #mymenu {
+        display: none
+    }
+
+    /*PC端头部*/
+    #header2 {
+        width: 100%;
+        height: 5em;
+        background: #fff;
+        text-align: right;
+    }
+
+    #header2 .logo {
+        width: 50%;
+        height: 5em;
+        float: left;
+        background: url(/images/logo.jpg) no-repeat 1.5em center;
+        background-size: 55%;
+        cursor: pointer
+    }
+
+    #header2 .myguide {
+        width: 50%;
+        height: 5em;
+        float: left;
+    }
+
+    #header2 .myguide .zxyy {
+        width: 20%;
+        height: 5em;
+        line-height: 5em;
+        float: left;
+        background: url(/images/icon1.gif)no-repeat 15% 50%;
+    }
+
+    /*1.7em 1.8em*/
+    #header2 .myguide .czys {
+        width: 20%;
+        height: 5em;
+        line-height: 5em;
+        float: left;
+        background: url(/images/icon2.gif)no-repeat 15% 50%;
+    }
+
+    #header2 .myguide .lxwm {
+        width: 20%;
+        height: 5em;
+        line-height: 5em;
+        float: left;
+        background: url(/images/icon3.gif)no-repeat 15% 50%;
+    }
+
+    #header2 .myguide .search {
+        width: 40%;
+        height: 5em;
+        line-height: 5em;
+        float: left;
+        display: table;
+    }
+
+    #header2 .myguide .search div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    #header2 .myguide .search div input[type='search'] {
+        float: left;
+        margin-left: 10%;
+        margin-left: 3%\0;
+        width: 75%;
+        height: 3em;
+        line-height: 3em;
+        border-right: none;
+        outline: none
+    }
+
+    #header2 .myguide .search div button[type="button"] {
+        float: left;
+        width: 15%;
+        height: 3em;
+        height: 3.15em\0;
+        border-left: none;
+        outline: none;
+        background: url('/images/searchIcon.png') #FAFAFA no-repeat center center;
+        cursor: pointer;
+    }
+
+    /*文章块样式 border-left:none;*/
+    .article_css {
+        background: #CFC8C9;
+        margin-top: 2em;
+    }
+
+    /*块样式*/
+    .section_css {
+        background: #fff;
+        /*margin-top:1em;*/
+    }
+
+
+
+    /*分享按钮块*/
+    #sharebutton {
+        background: #30acc6;
+        height: 5em;
+        margin-top: 2em;
+    }
+
+    #sharebutton .left {
+        float: left;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        line-height: 5em;
+        font-weight: bolder;
+        color: #f7f7f7;
+        font-size: 1em;
+    }
+
+    #sharebutton .middle {
+        float: left;
+        width: 45%;
+        height: 100%;
+        /*line-height:2em;background:url('/images/g/g1.gif') no-repeat center center;*/
+    }
+
+    #sharebutton .middle li {
+        display: table;
+        float: left;
+        width: 15%;
+        height: 100%;
+        background: #30acc6;
+        margin-left: 0.3em;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    #sharebutton .middle li span {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 0.5em;
+        color: #f7f7f7;
+        opacity: 0
+    }
+
+    #sharebutton .middle li#weibo {
+        background: url('/images/g/ShareWeibo.png') no-repeat center center;
+        background-size: 60%;
+    }
+
+    #sharebutton .middle li#weixin {
+        background: url('/images/g/ShareWeixin.png') no-repeat center center;
+        background-size: 60%;
+    }
+
+    #sharebutton .middle li#qq {
+        background: url('/images/g/ShareQQ.png') no-repeat center center;
+        background-size: 60%;
+    }
+
+    #sharebutton .middle li#facebook {
+        background: url('/images/g/ShareFaceBook.png') no-repeat center center;
+        background-size: 60%;
+    }
+
+    #sharebutton .middle li#twitter {
+        background: url('/images/g/ShareTwitter.png') no-repeat center center;
+        background-size: 60%;
+    }
+
+    #sharebutton .middle li#linkedin {
+        background: url('/images/g/ShareLinkedin.png') no-repeat center center;
+        background-size: 60%;
+    }
+
+    #sharebutton .middle li:hover {
+        opacity: 0.5
+    }
+
+    #sharebutton .middle li#cancle {
+        display: none
+    }
+
+    #sharebutton .middle li#sharetitle {
+        display: none
+    }
+
+    #sharebutton .right {
+        float: left;
+        width: 25%;
+        height: 100%;
+        line-height: 5em;
+        text-align: center;
+        color: #f7f7f7
+    }
+
+    #sharebutton .right .share {
+        border-radius: 1em;
+        padding: 0.3em 2em 0.3em 2em;
+        border: 1px solid #f7f7f7
+    }
+
+    #sharebutton .right .share:hover {
+        background: #f7f7f7;
+        border: 1px solid #f7f7f7;
+        color: #30acc6;
+        cursor: pointer;
+    }
+
+    #rightsharetag {
+        display: none;
+        position: fixed;
+        right: 1em;
+        bottom: 10%;
+        padding: 0.5em;
+        border-radius: 50%;
+        background: #30acc6;
+        color: #f7f7f7;
+        text-align: center;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        font-size: 1em;
+        cursor: pointer
+    }
+
+    /*底部导航块*/
+    #bottomguide {
+        height: 19em;
+        margin-top: 2em;
+    }
+
+    /*#bottomguide .left  {float:left;width:28%;height:100%;line-height:5em;background:url('/images/logo.jpg') no-repeat center top;background-size:80%;}*/
+    #bottomguide .left {
+        float: left;
+        width: 28%;
+        height: 100%;
+        line-height: 5em;
+        background: url('/20190824/pic/our_service.jpg') no-repeat center top;
+        background-size: 80%;
+    }
+
+    #bottomguide .middle {
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    #bottomguide .middle .columnname {
+        float: left;
+        width: 20%;
+        height: 100%;
+        font-size: 0.75em
+    }
+
+    #bottomguide .middle .columnname span {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    #bottomguide .right {
+        float: left;
+        width: 22%;
+        height: 100%;
+    }
+
+    #bottomguide .right .contact {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    #bottomguide .right .telphone {
+        background: url(/images/g/g2.gif) no-repeat left center;
+        background-size: 16%;
+        height: 3em;
+        margin: 1em 0 1em 0;
+        padding-left: 2.7em;
+        padding-left: 4em\0;
+        /*background:#EDA6A7*/
+    }
+
+    #bottomguide .right .telphone .hour {
+        font-size: 0.7em;
+    }
+
+    #bottomguide .right .telphone .number {
+        font-weight: bold;
+    }
+
+    #bottomguide .right .why {
+        background: url(/images/g/g3.gif) no-repeat left center;
+        background-size: 16%;
+        height: 3em;
+        line-height: 3em;
+        padding-left: 2.7em;
+        padding-left: 4em\0;
+        font-size: 1em;
+        /*background:#ccc*/
+    }
+
+    /*脚footer块*/
+    #footer {
+        margin-top: 2em;
+        line-height: 1.5em;
+    }
+
+    #footer .info {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 2em;
+        color: #777;
+        font-size: 0.7em;
+        padding: 7em 0 2em 0;
+        background: url('/images/g/g4.gif') no-repeat center 25% #333333;
+    }
+
+    #footer .info2 {
+        width: 100%;
+        line-height: 1em;
+        padding: 1.5em 0 1.5em 0;
+        text-align: center;
+        background: #f3f3f3;
+        color: #666;
+        font-size: 0.7em;
+    }
+
+    #footer .info2 a {
+        display: none;
+        border-right: 1px solid #ccc;
+        padding: 0 0.8em 0 0.5em;
+    }
+
+    #footer .info2 a:nth-last-child(1) {
+        border-right: none;
+    }
+
+    #footer a {
+        color: currentColor;
+    }
+
+    /*侧边栏 tips 模块*/
+    #tips_float {
+        width: 8em;
+        padding: 0.5em;
+        background: #E1E0E0;
+        border-radius: 0.5em;
+        display: table-cell;
+        position: fixed;
+        z-index: 9999;
+        right: 0.5em;
+        top: 30%;
+    }
+
+    #tips_float .tips {
+        font-size: 1em;
+        color: #30acc6;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 0.3em;
+    }
+
+    #tips_float span {
+        color: #30acc6;
+        font-weight: bold
+    }
+
+    #tips_float .title {
+        font-size: 0.7em;
+        text-align: left;
+        line-height: 1.8em;
+    }
+
+    #tips_float .th,
+    .hz {
+        font-size: 0.7em;
+        text-align: left;
+        line-height: 1.8em;
+    }
+
+
+}
+
+/*通用 视频播放与暂停按钮 start*/
+.playButton4 {
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0.9;
+}
+
+.playButton3 {
+    width: 2.5em;
+    height: 2.5em;
+    display: table;
+}
+
+.playButton2 {
+    padding: 0.3em;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 0.9;
+}
+
+/*播放*/
+.playButton1 {
+    width: 0;
+    height: 0;
+    outline: none;
+    border-bottom: 0.7em solid #222;
+    border-left: 0.4em solid transparent;
+    border-right: 0.4em solid transparent;
+    transform: rotate(90deg);
+}
+
+/*暂停*/
+.playButton1:hover {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: no-repeat;
+    background-image: linear-gradient(to top, #222, #222), linear-gradient(to top, #222, #222);
+    background-size: 1em 0.3em, 1em 0.3em;
+    background-position: center 0.5em, center 1.1em;
+    transform: rotate(90deg);
+}
+
+/*通用 视频播放与暂停按钮 end*/

@@ -1,0 +1,248 @@
+.pc-header {
+  height: 6em;
+}
+.pc-header .logo {
+  width: 40%;
+  height: 100%;
+  background-image: url('../images/pc-picture/header_logo.jpg');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  float: left;
+}
+.pc-header .header-action {
+  width: 50%;
+  height: 100%;
+  float: right;
+  box-sizing: border-box;
+  position: relative;
+}
+.pc-header .header-action form {
+  width: 40%;
+  height: 55%;
+  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+.pc-header .header-action form input {
+  width: 80%;
+  height: 100%;
+  display: block;
+  float: left;
+  margin: 0;
+  box-sizing: border-box;
+  border-right: 0;
+}
+.pc-header .header-action form button {
+  width: 20%;
+  height: 100%;
+  display: block;
+  float: left;
+  margin: 0;
+  box-sizing: border-box;
+  border-left: 0;
+}
+.pc-header .header-action .header-nav {
+  width: 60%;
+  height: 55%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+.pc-header .header-action .header-nav .nav-item {
+  width: 25%;
+  float: left;
+  position: relative;
+}
+.pc-header .header-action .header-nav .nav-item p {
+  text-align: right;
+  height: 100%;
+  line-height: 1;
+}
+.pc-header .header-action .header-nav .nav-item p i,
+.pc-header .header-action .header-nav .nav-item p span {
+  font-size: 21px;
+}
+.pc-header .header-action .header-nav .nav-item p:hover + .item-list {
+  display: block;
+}
+.pc-header .header-action .header-nav .nav-item .item-list {
+  position: absolute;
+  display: none;
+  width: 125%;
+  top: 70%;
+  background-color: #eef7f8;
+}
+.pc-header .header-action .header-nav .nav-item .item-list li {
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  border-bottom: 1px dashed #ccc;
+  font-size: 17px;
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li {
+  padding: 0px 15%;
+  text-align: right;
+  background-size: 20% 60%;
+  background-repeat: no-repeat;
+  background-position: 5% center;
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.english {
+  background-image: url('https://www.fudahospital.com/images/country_flags/us.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.arab {
+  background-image: url('https://www.fudahospital.com/images/country_flags/alb.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.russia {
+  background-image: url('https://www.fudahospital.com/images/country_flags/russia.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.india {
+  background-image: url('https://www.fudahospital.com/images/country_flags/yd.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.indonesia {
+  background-image: url('https://www.fudahospital.com/images/country_flags/id.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.malay {
+  background-image: url('https://www.fudahospital.com/images/country_flags/mlxy.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.vietnam {
+  background-image: url('https://www.fudahospital.com/images/country_flags/yn.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.thailand {
+  background-image: url('https://www.fudahospital.com/images/country_flags/tg.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.hungary {
+  background-image: url('https://www.fudahospital.com/images/country_flags/xyl.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.romanian {
+  background-image: url('https://www.fudahospital.com/images/country_flags/lmny.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.denmark {
+  background-image: url('https://www.fudahospital.com/images/country_flags/dm.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.hongkong {
+  background-image: url('https://www.fudahospital.com/images/country_flags/hk.jpg');
+}
+.pc-header .header-action .header-nav .nav-item .item-list.lauguage-list li.china {
+  background-image: url('https://www.fudahospital.com/images/country_flags/china.jpg');
+}
+#fd-nav {
+  height: 3em;
+}
+#fd-nav > ul > li {
+  width: 12.5%;
+  height: 100%;
+  text-align: center;
+  line-height: 3em;
+  background-color: #41b1c5;
+  float: left;
+  position: relative;
+}
+#fd-nav > ul > li:hover > ul {
+  display: block;
+}
+#fd-nav > ul > li:nth-of-type(1) {
+  background-color: #3697a8;
+}
+#fd-nav > ul > li > a {
+  color: #fff;
+  font-size: 1em;
+}
+#fd-nav > ul > li > ul {
+  display: none;
+  width: 100%;
+  background-color: #f5f5f5;
+  position: absolute;
+  z-index: 99999;
+}
+#fd-nav > ul > li > ul > li {
+  height: 2.5em;
+  line-height: 2.5em;
+  font-size: 1em;
+}
+#fd-nav > ul > li > ul > li a {
+  color: #288396;
+}
+.main-banner {
+  height: 27.65432099em;
+}
+.main-banner .swiper-slide {
+  height: 100%;
+}
+.main-banner .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 800px) {
+  .main-banner .swiper-slide .bg-screen-silde {
+    display: none;
+  }
+}
+@media screen and (min-width: 801px) {
+  .main-banner .swiper-slide .sm-screen-silde {
+    display: none;
+  }
+}
+.fd-summary {
+  width: 100%;
+  height: 5em;
+  margin: 25px 0;
+}
+.fd-summary ul {
+  height: 100%;
+}
+.fd-summary ul li {
+  width: 16.6%;
+  height: 100%;
+  float: left;
+}
+@media screen and (max-width: 800px) {
+  .fd-summary ul li {
+    width: 33.3%;
+    height: 50%;
+  }
+}
+.fd-summary ul li:nth-of-type(2) div {
+  background-image: url('../images/pc-picture/consult/01_06.png');
+}
+.fd-summary ul li:nth-of-type(3) div {
+  background-image: url('../images/pc-picture/consult/01_09.png');
+}
+.fd-summary ul li:nth-of-type(4) div {
+  background-image: url('../images/pc-picture/consult/01_12.png');
+}
+.fd-summary ul li:nth-of-type(5) div {
+  background-image: url('../images/pc-picture/consult/01_14.png');
+}
+.fd-summary ul li:nth-of-type(6) div {
+  background-image: url('../images/pc-picture/consult/01_17.png');
+}
+.fd-summary ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .fd-summary ul li a div {
+    width: 30%;
+    float: left;
+    height: 100%;
+  }
+  .fd-summary ul li a p {
+    float: left;
+  }
+}
+.fd-summary ul li a div {
+  height: 70%;
+  background-image: url('../images/pc-picture/consult/01_03.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 4.59259259em 3.20987654em;
+}
+.fd-summary ul li a p {
+  height: 30%;
+  text-align: center;
+  color: #41b1c5;
+}
